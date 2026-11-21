@@ -182,29 +182,3 @@ sudo nmap --script vuln -p 21,22,23,25,80,139,445,1524,3632,6667 192.168.56.101 
     ├── parse_scan_results.py                  # Python scan parser & summary generator
     └── generate_docx_report.py                # Python generator for the Word report
 ```
-
----
-
-## How to Reproduce the Audit
-
-### 1. In Kali Linux (Automated Execution)
-Ensure both Kali Linux and Metasploitable 2 VMs are running on the same host-only network:
-```bash
-# Clone the repository
-git clone <your-repo-link>
-cd <repo-folder>
-
-# Make bash script executable and run as root
-chmod +x scripts/run_port_security_audit.sh
-sudo ./scripts/run_port_security_audit.sh 192.168.56.101
-```
-
-### 2. Parse and Summarize Scan Results
-```bash
-python3 scripts/parse_scan_results.py
-```
-
-### 3. Rebuild the Word Report (`.docx`)
-```bash
-python3 scripts/generate_docx_report.py
-```

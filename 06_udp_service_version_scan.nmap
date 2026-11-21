@@ -1,0 +1,21 @@
+# Nmap 7.94SVN scan initiated Sat Nov 21 10:40:02 2026 as: nmap -sU -sV -p 53,69,111,137,161,2049 192.168.56.101 -oN scans/06_udp_service_version_scan.nmap
+Nmap scan report for 192.168.56.101
+Host is up (0.00048s latency).
+
+PORT     STATE  SERVICE     VERSION
+53/udp   open   domain      BIND 9.4.2
+69/udp   open   tftp        Linux TFTP (empty request)
+111/udp  open   rpcbind     2 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2            111/udp   rpcbind
+|   100003  2,3,4       2049/udp   nfs
+|   100005  1,2,3      36412/udp   mountd
+137/udp  open   netbios-ns  Samba smbd (workgroup: WORKGROUP)
+161/udp  open   snmp        SNMPv1 server; net-snmp (community: public)
+2049/udp open   nfs         2-4 (RPC #100003)
+MAC Address: 08:00:27:48:8A:23 (Oracle VirtualBox virtual NIC)
+
+Service Info: Host: metasploitable.localdomain
+
+# Nmap done at Sat Nov 21 10:41:45 2026 -- 1 IP address (1 host up) scanned in 103.11 seconds

@@ -1,0 +1,17 @@
+# Nmap 7.94SVN scan initiated Sat Nov 21 10:35:12 2026 as: nmap -sU --top-ports 50 -v -T4 192.168.56.101 -oN scans/05_udp_top_ports_scan.nmap
+Nmap scan report for 192.168.56.101
+Host is up (0.00045s latency).
+Not shown: 41 closed udp ports (port-unreach)
+PORT     STATE         SERVICE
+53/udp   open          domain
+67/udp   open|filtered dhcps
+68/udp   open|filtered dhcpc
+69/udp   open|filtered tftp
+111/udp  open          rpcbind
+137/udp  open          netbios-ns
+138/udp  open|filtered netbios-dgm
+161/udp  open          snmp
+2049/udp open          nfs
+MAC Address: 08:00:27:48:8A:23 (Oracle VirtualBox virtual NIC)
+
+# Nmap done at Sat Nov 21 10:36:20 2026 -- 1 IP address (1 host up) scanned in 68.32 seconds

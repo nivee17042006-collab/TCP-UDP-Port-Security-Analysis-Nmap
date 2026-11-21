@@ -1,0 +1,31 @@
+# Nmap 7.94SVN scan initiated Sat Nov 21 10:18:04 2026 as: nmap -sS -v -T4 192.168.56.101 -oN scans/02_tcp_syn_stealth_scan.nmap
+Nmap scan report for 192.168.56.101
+Host is up (0.00035s latency).
+Not shown: 977 closed tcp ports (reset)
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+23/tcp   open  telnet
+25/tcp   open  smtp
+53/tcp   open  domain
+80/tcp   open  http
+111/tcp  open  rpcbind
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+512/tcp  open  exec
+513/tcp  open  login
+514/tcp  open  shell
+1099/tcp open  rmiregistry
+1524/tcp open  ingreslock
+2049/tcp open  nfs
+2121/tcp open  ccproxy-ftp
+3306/tcp open  mysql
+5432/tcp open  postgresql
+5900/tcp open  vnc
+6000/tcp open  X11
+6667/tcp open  irc
+8009/tcp open  ajp13
+8180/tcp open  http-proxy
+MAC Address: 08:00:27:48:8A:23 (Oracle VirtualBox virtual NIC)
+
+# Nmap done at Sat Nov 21 10:18:06 2026 -- 1 IP address (1 host up) scanned in 2.14 seconds
